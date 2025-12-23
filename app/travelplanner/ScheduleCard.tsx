@@ -221,7 +221,7 @@ export default function ScheduleCard({
                   </label>
                   <input
                     type='url'
-                    name='locationURL'
+                    name='location_url'
                     value={formValues.location_url || ""}
                     onChange={onInputChange}
                     className='w-full text-sm bg-white text-gray-700 border border-gray-200 rounded px-2 py-1.5 focus:outline-none focus:border-blue-500'
