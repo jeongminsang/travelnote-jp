@@ -199,7 +199,8 @@ export default function NewScheduleForm({
                 name='cost'
                 value={calculateTotalCost(item.costs) || ""}
                 onChange={(e) => {
-                  const value = e.target.value === "" ? 0 : parseInt(e.target.value, 10);
+                  const value =
+                    e.target.value === "" ? 0 : parseInt(e.target.value, 10);
                   if (!isNaN(value)) {
                     // 단일 cost 값을 모든 cost 필드에 동일하게 설정하거나, etc에만 설정
                     onCostChange("etc", e.target.value);
