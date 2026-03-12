@@ -18,7 +18,7 @@ export async function pingSupabase(project: KeepAliveProject) {
         // Simple query to keep the DB active
         // This assumes a 'keep-alive' table exists
         const { data, error } = await supabase
-            .from("keep-alive")
+            .from("schedules")
             .select("id")
             .limit(1);
 
