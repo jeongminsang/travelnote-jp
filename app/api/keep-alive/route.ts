@@ -3,6 +3,7 @@ import { keepAliveConfig } from "@/config/keep-alive-config";
 import { pingSupabase } from "./helper";
 
 export async function GET(req: NextRequest) {
+    console.log("[Keep-Alive API] Request received at:", new Date().toISOString());
     const authHeader = req.headers.get("authorization");
 
     // Basic security check for Vercel Cron
